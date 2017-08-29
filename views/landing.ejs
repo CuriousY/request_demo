@@ -1,0 +1,14 @@
+<h1> welcome to the landing page of curious </h1>
+
+<h2> list of curious people </h2>
+
+
+<% curiousList.forEach(function(curious){ %>
+   <div style="float:left">
+    
+    <h3> <%=curious.name %></h3>
+    <img src="<%=curious.image%>">
+    
+</div> 
+    
+<%})%>
