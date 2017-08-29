@@ -1,14 +1,18 @@
-<h1> welcome to the landing page of curious </h1>
 
-<h2> list of curious people </h2>
+<%include partials/header.ejs %>
+<h1> Curious people showcase </h1>
 
 
+   <div class="container">
+    <div class="row">
 <% curiousList.forEach(function(curious){ %>
-   <div style="float:left">
-    
+    <div class="col-md-3">
     <h3> <%=curious.name %></h3>
-    <img src="<%=curious.image%>">
-    
-</div> 
+    <img class=" img-responsive img-thumbnail" src="<%=curious.image%>">
+    </div>
     
 <%})%>
+</div>
+</div> 
+
+<%include partials/header.ejs %>
